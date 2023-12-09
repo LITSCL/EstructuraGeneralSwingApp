@@ -19,7 +19,7 @@ public class RutUtil {
 			
 			contador = 0;
 			
-			if (rut.length() == 11) { //Este c�digo solo se ejecuta si el largo del rut es igual a 11.
+			if (rut.length() == 11) { //Este código solo se ejecuta si el largo del rut es igual a 11.
 				
 				for (int i = 0; i < rut.length(); i++) { //Aca se recorren todos los caracteres del rut.
 					
@@ -94,7 +94,7 @@ public class RutUtil {
 				}
 			}
 			
-			if (rut.length() == 12) { //Este c�digo solo se ejecuta si el largo del rut es igual a 12.
+			if (rut.length() == 12) { //Este código solo se ejecuta si el largo del rut es igual a 12.
 				
 				for (int i = 0; i < rut.length(); i++) { //Aca se recorren todos los caracteres del rut.
 					
