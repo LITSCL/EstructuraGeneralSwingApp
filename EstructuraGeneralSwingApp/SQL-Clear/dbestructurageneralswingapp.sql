@@ -1,11 +1,11 @@
-﻿-- phpMyAdmin SQL Dump
--- version 5.1.1
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-10-2021 a las 21:42:23
--- Versión del servidor: 10.4.21-MariaDB
--- Versión de PHP: 7.4.23
+-- Tiempo de generación: 10-12-2023 a las 19:11:10
+-- Versión del servidor: 10.4.17-MariaDB
+-- Versión de PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,14 +34,6 @@ CREATE TABLE `categoria` (
   `nombre` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `categoria`
---
-
-INSERT INTO `categoria` (`id`, `nombre`) VALUES
-(1, 'Procesador'),
-(2, 'Tarjeta Grafica');
-
 -- --------------------------------------------------------
 
 --
@@ -54,16 +46,6 @@ CREATE TABLE `producto` (
   `precio` double NOT NULL,
   `categoria_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `producto`
---
-
-INSERT INTO `producto` (`codigo`, `nombre`, `precio`, `categoria_id`) VALUES
-('CB-9674', ' AMD Radeon RX 6700 XT', 321770, 2),
-('LT-4472', 'AMD Ryzen 7 2600X', 165990, 1),
-('PQ-3590', 'Intel Core i5-10400F', 147500, 1),
-('TT-5344', 'Nvidia GeForce RTX 3060', 384230, 2);
 
 -- --------------------------------------------------------
 
@@ -79,14 +61,6 @@ CREATE TABLE `usuario` (
   `clave` varchar(255) NOT NULL,
   `tipo` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `usuario`
---
-
-INSERT INTO `usuario` (`rut`, `nombre`, `apellido`, `email`, `clave`, `tipo`) VALUES
-('19.757.106-3', 'Daniel', 'Alvarez', 'daniel@ejemplo.local', '123', 'Administrador'),
-('4.283.767-9', 'Maria', 'Aguilera', 'maria@ejemplo.local', '123', 'Cliente');
 
 --
 -- Índices para tablas volcadas
@@ -120,7 +94,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
