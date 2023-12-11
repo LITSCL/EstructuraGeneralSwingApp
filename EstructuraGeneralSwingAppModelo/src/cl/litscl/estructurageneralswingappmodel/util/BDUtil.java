@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * Esta clase permite realizar una conxi�n a la base de datos.
+ * Esta clase permite realizar una conxión a la base de datos.
  * @author MelchioT
  *
  */
@@ -20,8 +20,8 @@ public class BDUtil {
 	}
 	
 	/**
-	 * Este m�todo permite conectar el programa a la base de datos.
-	 * @return Retorna true si la conexi�n fue exitosa, de lo contrario retorna false.
+	 * Este método permite conectar el programa a la base de datos.
+	 * @return Retorna true si la conexión fue exitosa, de lo contrario retorna false.
 	 */
 	public boolean conectar() {
 		try {
@@ -35,7 +35,7 @@ public class BDUtil {
 	}
 	
 	/**
-	 * Este m�todo desconecta el programa de la base de datos.
+	 * Este método desconecta el programa de la base de datos.
 	 */
 	public void desconectar() {
 		try {
